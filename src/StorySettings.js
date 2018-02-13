@@ -54,7 +54,7 @@ const StorySettings = props => {
           onChange={props.handleChange}
         />Hufflepuff
         <input
-          name="house"
+          name="selectedHouse"
           type="radio"
           value="Ravenclaw"
           onChange={props.handleChange}

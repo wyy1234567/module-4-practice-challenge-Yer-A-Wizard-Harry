@@ -9,17 +9,13 @@ class App extends Component {
     wizards: [],
     selectedHouse: "All",
     newWizard: "",
-    newWizardHouse: "Hufflepuff"
+    newWizardHouse: "Gryffindor"
   };
 
   componentDidMount() {
-    this.setState({
-      wizards: [
-        { name: "Herry Pother", house: "Hufflepuff" },
-        { name: "Herman Granger", house: "Griffdoor" },
-        { name: "Ran Weasel", house: "Ravenpuff" }
-      ]
-    });
+    fetch("http://hp-api.herokuapp.com/api/characters/students")
+      .then(res => res.json())
+      .then(wizards => this.setState({ wizards }));
   }
 
   handleChange = event => {
@@ -35,7 +31,9 @@ class App extends Component {
       house: this.state.newWizardHouse
     };
     this.setState(previousState => ({
-      wizards: [...previousState.wizards, newWizard]
+      wizards: [...previousState.wizards, newWizard],
+      newWizard: "",
+      newWizardHouse: "Gryffindor"
     }));
   };
 
