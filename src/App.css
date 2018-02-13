@@ -4,6 +4,10 @@
   grid-template-rows: 10vh 25vh 65vh;
 }
 
+h3 {
+  margin: 0.5em;
+  padding: 0;
+}
 .StorySettings {
   background-color: #ddd;
 }

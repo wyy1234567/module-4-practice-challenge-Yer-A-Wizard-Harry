@@ -1,22 +1,9 @@
 import React from "react";
+import Wizard from "./Wizard";
 
 const WizardList = props => {
-  const renderWizards = () => {
-    let filteredWizards = props.wizards;
-    if (props.selectedHouse !== "All") {
-      filteredWizards = props.wizards.filter(wiz => {
-        return wiz.house === props.selectedHouse;
-      });
-    }
-
-    return filteredWizards.map((wiz, i) => (
-      <div key={i} className="Wizard">
-        <div>{wiz.name}</div>
-        <div>{wiz.house}</div>
-      </div>
-    ));
-  };
-  return <div className="WizardList">{renderWizards()}</div>;
+  //display all yer wizards, or filter by house
+  return <div className="WizardList">Yer not a wizard yet, Harry</div>;
 };
 
 export default WizardList;
