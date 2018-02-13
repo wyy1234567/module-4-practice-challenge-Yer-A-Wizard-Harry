@@ -7,9 +7,16 @@ Unfortunately, Ron was messing around with the Obliviate Spell (a.k.a 'The Forge
 
 See below
 
+
+
+
 ![alt text][checkpoint]
 
 [checkpoint]: ./public/wizard.gif "Yer a wizard"
+
+
+
+
 
 
 Go ahead and use your imagination - add yourself to the list of students and assign yourself a house.
